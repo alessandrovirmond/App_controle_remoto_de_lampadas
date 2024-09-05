@@ -5,9 +5,9 @@
 #include <wiringPi.h>
 #include <MQTTClient.h>
 
-#define ADDRESS     "tcp://services.rfidbrasil.com:1883" // Endereço do servidor MQTT
+#define ADDRESS     "tcp://lorem_impsum.com" // Endereço do servidor MQTT
 #define CLIENTID    "OrangePiClient"
-#define TOPIC       "/teste_iot"
+#define TOPIC       "/123"
 #define QOS         1
 #define TIMEOUT     10000L
 
