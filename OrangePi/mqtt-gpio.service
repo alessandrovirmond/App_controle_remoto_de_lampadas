@@ -1,0 +1,12 @@
+[Unit]
+Description=MQTT GPIO Control Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/mqtt_gpio_control
+WorkingDirectory=/home/user
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
