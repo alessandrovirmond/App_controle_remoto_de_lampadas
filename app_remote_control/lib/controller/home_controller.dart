@@ -48,9 +48,8 @@ class HomeController {
   void sendMessage(String topic, String message) {
     if (_situation.mqtt = true) {
       client.publishMessage(topic, message);
-      print("Mensagem enviada para o tópico $topic: $message");
     } else {
-      print("Cliente MQTT não está conectado.");
+
     }
   }
 }
