@@ -33,11 +33,9 @@ class HomeController {
 
     await client.connect(() {
       _situation.mqtt = true;
-      print("-------------MQTT CONECTADO");
       _update();
     }, () {
       _situation.mqtt = false;
-      print("-------------MQTT DESCONECTADO");
       _update();
     });
   }
