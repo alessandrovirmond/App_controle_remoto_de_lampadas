@@ -21,6 +21,7 @@ class _HomeState extends State<Home> {
     super.initState();
     homeController = HomeController(); 
   }
+  
 
   void toggleSwitch(int gpio, bool isOn) {
     setState(() {
